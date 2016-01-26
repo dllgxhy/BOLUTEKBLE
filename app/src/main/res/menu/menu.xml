@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+
+        android:title="返回"/>
+    <item
+        android:id="@+id/action_cont"
+        android:orderInCategory="100"
+
+        android:title="连接"/>
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="100"
+
+        android:title="断开"/>
+
+</menu>

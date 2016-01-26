@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAC地址:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="空"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接状态:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未连接"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <!-- 以下内容需要更改   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/position_1"
+            android:text="1   "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_num_1"
+            android:text="null"
+            android:visibility="gone"
+            />
+        <SeekBar
+            android:id="@+id/SeekBartime_01"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:id="@+id/id1_time_1"
+            android:visibility="gone"
+            />
+        
+        <SeekBar
+            android:id="@+id/SeekBaramp_01"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/id1_amplevel"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--编号2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/position_2"
+            android:text="2   "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_num_2"
+            android:text="null"
+            android:visibility="gone"
+            />
+        <SeekBar
+            android:id="@+id/SeekBartime_02"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:id="@+id/id1_time_2"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:id="@+id/SeekBaramp_02"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/id2_amplevel"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <!--编号3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/position_3"
+            android:text="3   "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_num_3"
+            android:text="null"
+            android:visibility="gone"
+            />
+        <SeekBar
+            android:id="@+id/SeekBartime_03"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:id="@+id/id1_time_3"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:id="@+id/SeekBaramp_03"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/id3_amplevel"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--编号4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/position_4"
+            android:text="4   "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_num_4"
+            android:text="null"
+            android:visibility="gone"
+            />
+        <SeekBar
+            android:id="@+id/SeekBartime_04"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:id="@+id/id1_time_4"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:id="@+id/SeekBaramp_04"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40px"
+            android:minHeight="40px"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="0"
+            android:thumbOffset="20px"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/id4_amplevel"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
