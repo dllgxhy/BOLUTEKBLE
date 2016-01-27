@@ -180,7 +180,7 @@ public class SmellCtrl extends Activity {
 //                DATA = ""+DATA+"\n第"+i+"条："+intent.getStringExtra(BluetoothLeService.EXTRA_DATA);
                 DATA = intent.getStringExtra(BluetoothLeService.EXTRA_DATA);
                 Log.e("a4", "" + DATA);
-//                inputData_Process(DATA);
+                inputData_Process(DATA);
 //                tvdata.setText(""+DATA);
 //                tvdata.setSelection(DATA.length());
             }else if(BluetoothLeService.ACTION_RSSI.equals(action)){
@@ -430,10 +430,10 @@ public class SmellCtrl extends Activity {
         tvstate = (TextView) findViewById(R.id.connection_state);
 
 
-        inputData_Process("101");
-        inputData_Process("226");
-        inputData_Process("329");
-        inputData_Process("405");
+//        inputData_Process("101");
+//        inputData_Process("226");
+//        inputData_Process("329");
+//        inputData_Process("405");
 
 
 
@@ -457,9 +457,19 @@ public class SmellCtrl extends Activity {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
                 byte[]bb= new byte[]{(byte)1,2,3};
-                String sendstr = data_upload+","+ seekbartime1 + "," + seekbaramp1 + "," + seekbartime2 + ","
-                        + seekbaramp2 + "," + seekbartime3 + ","+seekbaramp3+ "," + seekbartime4 + ","+seekbaramp4;
+                String sendstr = "group1:"+seekbartime1 + "," + seekbaramp1 +"\r\n";
                 Boolean boolean1 = mBluetoothLeService.write(mNotifyCharacteristic,sendstr);
+
+                sendstr = "group2:"+seekbartime2 + "," + seekbaramp2 +"\r\n";
+                boolean1 = mBluetoothLeService.write(mNotifyCharacteristic,sendstr);
+
+                sendstr = "group3:"+seekbartime3 + "," + seekbaramp3 +"\r\n";
+                boolean1 = mBluetoothLeService.write(mNotifyCharacteristic,sendstr);
+
+                sendstr = "group4:"+seekbartime4 + "," + seekbaramp4 +"\r\n";
+                boolean1 = mBluetoothLeService.write(mNotifyCharacteristic,sendstr);
+
+
 
                 SeekBaramp_1.setProgress(0);
                 SeekBartime_01.setProgress(0);
